@@ -4,204 +4,237 @@ function Home() {
   return (
     <main className="bg-[#0F172A]">
       <section id="home" className="relative overflow-hidden">
-        <div className="container mx-auto px-6 py-24 lg:py-32">
-          <div className="max-w-3xl">
-            <span className="inline-flex rounded-full border border-slate-700/70 bg-white/5 px-4 py-2 text-sm font-semibold uppercase tracking-[0.25em] text-[#22C55E]">
-              Portfólio profissional
-            </span>
-            <h1 className="mt-8 text-4xl font-semibold tracking-tight text-[#E5E7EB] sm:text-6xl">
-              Crio experiências digitais memoráveis para marcas que querem
-              crescer.
-            </h1>
-            <p className="mt-6 max-w-2xl text-base leading-8 text-slate-300 sm:text-lg">
-              Sou um desenvolvedor front-end com foco em design limpo,
-              usabilidade e resultados comerciais. Meu trabalho combina estética
-              profissional com interfaces rápidas e acessíveis.
-            </p>
-            <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-              <a
-                href="#contact"
-                className="inline-flex items-center justify-center rounded-full bg-[#1E3A8A] px-7 py-3 text-sm font-semibold text-white shadow-lg shadow-[#1E3A8A]/20 transition hover:bg-[#223f9f]"
-              >
-                Vamos conversar
-              </a>
-              <a
-                href="#projects"
-                className="inline-flex items-center justify-center rounded-full border border-slate-700 bg-white/5 px-7 py-3 text-sm font-semibold text-[#E5E7EB] transition hover:border-[#7C3AED] hover:text-[#7C3AED]"
-              >
-                Ver projetos
-              </a>
+        {/* fundo gradiant */}
+        <div className="absolute inset-0 bg-gradient-to-br from-[#0F172A] via-[#020617] to-[#0F172A]" />
+
+        {/* efeito de brilho */}
+        <div className="absolute top-[-100px] left-[-100px] w-[300px] h-[300px] bg-[#7C3AED]/20 rounded-full blur-3xl" />
+        <div className="absolute bottom-[-120px] right-[-120px] w-[300px] h-[300px] bg-[#22C55E]/20 rounded-full blur-3xl" />
+
+        <div className="relative container mx-auto px-6 py-24 lg:py-32">
+          <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-16">
+            {/* texto */}
+            <div className="max-w-2xl">
+              <span className="inline-flex rounded-full border border-slate-700/70 bg-white/5 px-4 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-[#22C55E]">
+                Portfólio profissional
+              </span>
+
+              <h1 className="mt-8 text-4xl sm:text-6xl font-semibold leading-tight text-[#E5E7EB]">
+                Construo sistemas e automações que{" "}
+                <span className="text-[#7C3AED]">resolvem problemas reais</span>
+              </h1>
+
+              <p className="mt-6 text-lg leading-8 text-slate-300">
+                Desenvolvedor em formação com foco em aplicações fullstack,
+                organização de dados e automação de processos. Experiência
+                prática com React, TypeScript e NestJS aplicada a projetos reais
+                e estudos orientados a impacto.
+              </p>
+
+              <div className="mt-10 flex flex-col sm:flex-row gap-4">
+                <a
+                  href="#contact"
+                  className="inline-flex items-center justify-center rounded-full bg-[#7C3AED] px-8 py-3 text-sm font-semibold text-white shadow-lg shadow-[#7C3AED]/30 hover:scale-105 transition"
+                >
+                  Falar comigo
+                </a>
+
+                <a
+                  href="#projects"
+                  className="inline-flex items-center justify-center rounded-full border border-slate-600 bg-white/5 px-8 py-3 text-sm font-semibold text-[#E5E7EB] hover:border-[#7C3AED] hover:text-[#7C3AED] transition"
+                >
+                  Ver projetos
+                </a>
+              </div>
+            </div>
+
+            {/* IMAGE */}
+            <div className="relative">
+              {/* Glow atrás da imagem */}
+              <div className="absolute inset-0 bg-[#7C3AED]/20 blur-2xl rounded-full" />
+
+              <img
+                src="https://i.postimg.cc/25nqgMYY/akanni029gmail-com-11zon-(1)-(1).jpg"
+                alt="Akanni Silva"
+                className="relative w-56 h-56 md:w-72 md:h-72 rounded-full object-cover border-4 border-[#1E293B] shadow-2xl"
+              />
             </div>
           </div>
         </div>
       </section>
 
-      <section id="results" className="container mx-auto px-6 py-16">
+      <section id="results" className="relative container mx-auto px-6 py-24">
         <div className="grid gap-8 xl:grid-cols-[1.9fr_1fr]">
-          <div className="rounded-[2rem] bg-[#111827]/90 p-8 shadow-[0_30px_90px_-45px_rgba(15,23,42,0.8)] sm:p-10">
-            <span className="text-sm uppercase tracking-[0.35em] text-[#7C3AED]">
-              Métricas e resultados
+          {/* BLOCO PRINCIPAL */}
+          <div className="rounded-[2rem] bg-white/5 backdrop-blur-xl border border-white/10 p-10 shadow-2xl">
+            <span className="text-xs uppercase tracking-[0.4em] text-[#7C3AED]">
+              Experiência e impacto
             </span>
-            <h2 className="mt-5 text-3xl font-semibold text-[#E5E7EB]">
-              Entregas orientadas à qualidade, velocidade e impacto.
+
+            <h2 className="mt-6 text-3xl font-semibold text-[#E5E7EB]">
+              Tecnologia aplicada com foco em eficiência real
             </h2>
-            <p className="mt-5 leading-8 text-slate-300">
-              Projetos com foco em geração de valor, sempre respeitando prazos e
-              garantindo uma experiência clara e elegante para o usuário.
+
+            <p className="mt-4 text-slate-300 max-w-2xl">
+              Experiência prática conectando desenvolvimento, automação e
+              análise de dados para gerar melhoria de processos e resultados
+              mensuráveis.
             </p>
-            <div className="mt-10 grid gap-4 sm:grid-cols-2">
-              <div className="rounded-[1.5rem] bg-[#0F172A] border border-slate-700/60 p-6">
-                <p className="text-sm uppercase tracking-[0.2em] text-slate-400">
-                  Satisfação
-                </p>
-                <p className="mt-4 text-3xl font-semibold text-[#22C55E]">
-                  95%
-                </p>
-                <p className="mt-3 text-sm leading-6 text-slate-400">
-                  Clientes com aprovação final e entrega no prazo.
-                </p>
-              </div>
-              <div className="rounded-[1.5rem] bg-[#0F172A] border border-slate-700/60 p-6">
-                <p className="text-sm uppercase tracking-[0.2em] text-slate-400">
-                  Performance
-                </p>
-                <p className="mt-4 text-3xl font-semibold text-[#22C55E]">
-                  +120%
-                </p>
-                <p className="mt-3 text-sm leading-6 text-slate-400">
-                  Crescimento médio de engajamento em projetos entregues.
-                </p>
-              </div>
-              <div className="rounded-[1.5rem] bg-[#0F172A] border border-slate-700/60 p-6">
-                <p className="text-sm uppercase tracking-[0.2em] text-slate-400">
-                  Projetos
-                </p>
-                <p className="mt-4 text-3xl font-semibold text-[#22C55E]">
-                  30+
-                </p>
-                <p className="mt-3 text-sm leading-6 text-slate-400">
-                  Projetos desenvolvidos com design responsivo e identidade
-                  forte.
-                </p>
-              </div>
-              <div className="rounded-[1.5rem] bg-[#0F172A] border border-slate-700/60 p-6">
-                <p className="text-sm uppercase tracking-[0.2em] text-slate-400">
-                  Eficiência
-                </p>
-                <p className="mt-4 text-3xl font-semibold text-[#22C55E]">
-                  100%
-                </p>
-                <p className="mt-3 text-sm leading-6 text-slate-400">
-                  Compromisso com entregas em tempo e suporte profissional.
-                </p>
-              </div>
+
+            {/* GRID */}
+            <div className="mt-10 grid gap-5 sm:grid-cols-2">
+              {[
+                {
+                  title: "Automação",
+                  value: "+80%",
+                  desc: "Performance em contatos (Multicréditos)",
+                },
+                {
+                  title: "Conversão",
+                  value: "+30%",
+                  desc: "Aumento em fechamento de vendas",
+                },
+                {
+                  title: "Engajamento",
+                  value: "+73%",
+                  desc: "Tráfego pago otimizado",
+                },
+                {
+                  title: "Vendas",
+                  value: "+100%",
+                  desc: "Crescimento mensal e-commerce",
+                },
+              ].map((item, i) => (
+                <div
+                  key={i}
+                  className="group rounded-2xl border border-white/10 bg-[#0F172A]/60 p-6 transition hover:border-[#7C3AED] hover:-translate-y-1"
+                >
+                  <p className="text-xs uppercase text-slate-400 tracking-wider">
+                    {item.title}
+                  </p>
+
+                  <p className="mt-3 text-3xl font-semibold text-[#22C55E]">
+                    {item.value}
+                  </p>
+
+                  <p className="mt-2 text-sm text-slate-400 group-hover:text-slate-300 transition">
+                    {item.desc}
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
 
-          <div className="rounded-[2rem] bg-[#111827]/90 p-8 shadow-[0_30px_70px_-40px_rgba(15,23,42,0.8)] sm:p-10">
-            <span className="text-sm uppercase tracking-[0.35em] text-[#7C3AED]">
-              Serviços
+          {/* COMPETÊNCIAS */}
+          <div className="rounded-[2rem] bg-white/5 backdrop-blur-xl border border-white/10 p-10 shadow-xl">
+            <span className="text-xs uppercase tracking-[0.4em] text-[#7C3AED]">
+              Competências
             </span>
-            <h3 className="mt-5 text-2xl font-semibold text-[#E5E7EB]">
-              Como posso ajudar seu negócio
+
+            <h3 className="mt-6 text-2xl font-semibold text-[#E5E7EB]">
+              Onde gero valor
             </h3>
-            <ul className="mt-8 space-y-4 text-slate-300">
-              <li className="rounded-3xl border border-slate-700/60 bg-[#0F172A]/60 p-5">
-                <p className="font-semibold text-[#E5E7EB]">
-                  Design de interface
-                </p>
-                <p className="mt-2 text-sm leading-6 text-slate-400">
-                  Layouts claros, modernos e alinhados à identidade visual da
-                  sua marca.
-                </p>
-              </li>
-              <li className="rounded-3xl border border-slate-700/60 bg-[#0F172A]/60 p-5">
-                <p className="font-semibold text-[#E5E7EB]">
-                  Desenvolvimento front-end
-                </p>
-                <p className="mt-2 text-sm leading-6 text-slate-400">
-                  Sites rápidos e responsivos com foco em experiência e
-                  conversão.
-                </p>
-              </li>
-              <li className="rounded-3xl border border-slate-700/60 bg-[#0F172A]/60 p-5">
-                <p className="font-semibold text-[#E5E7EB]">
-                  Consultoria digital
-                </p>
-                <p className="mt-2 text-sm leading-6 text-slate-400">
-                  Estratégias para posicionar sua presença online com
-                  credibilidade e impacto.
-                </p>
-              </li>
-            </ul>
+
+            <div className="mt-8 space-y-4">
+              {[
+                {
+                  title: "Fullstack",
+                  desc: "React, TypeScript, NestJS e APIs REST estruturadas",
+                },
+                {
+                  title: "Dados & Processos",
+                  desc: "Modelagem, validação e organização de fluxos",
+                },
+                {
+                  title: "Automação",
+                  desc: "Workflows para ganho de escala e eficiência",
+                },
+              ].map((item, i) => (
+                <div
+                  key={i}
+                  className="p-5 rounded-xl border border-white/10 bg-[#0F172A]/60 hover:border-[#7C3AED] transition"
+                >
+                  <p className="font-semibold text-white">{item.title}</p>
+                  <p className="text-sm text-slate-400 mt-1">{item.desc}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="projects" className="container mx-auto px-6 py-16">
-        <div className="mb-10 text-center">
-          <p className="text-sm uppercase tracking-[0.35em] text-[#7C3AED]">
-            Projetos recentes
+      <section id="projects" className="container mx-auto px-6 py-24">
+        <div className="text-center mb-16">
+          <p className="text-xs uppercase tracking-[0.4em] text-[#7C3AED]">
+            Projetos
           </p>
-          <h2 className="mt-4 text-3xl font-semibold text-[#E5E7EB]">
-            Trabalhos pensados para resultados reais
+          <h2 className="mt-4 text-4xl font-semibold text-white">
+            Construídos para resolver problemas reais
           </h2>
         </div>
-        <div className="grid gap-6 md:grid-cols-3">
-          <article className="rounded-[2rem] border border-slate-700/70 bg-[#111827]/90 p-6 transition hover:-translate-y-1 hover:border-[#7C3AED]">
-            <span className="inline-flex rounded-full bg-[#7C3AED]/10 px-3 py-1 text-xs uppercase tracking-[0.25em] text-[#7C3AED]">
-              E-commerce
-            </span>
-            <h3 className="mt-5 text-xl font-semibold text-[#E5E7EB]">
-              Loja de moda premium
-            </h3>
-            <p className="mt-3 text-sm leading-6 text-slate-400">
-              Interface limpa, busca rápida e checkout otimizado para maior
-              conversão.
-            </p>
-          </article>
-          <article className="rounded-[2rem] border border-slate-700/70 bg-[#111827]/90 p-6 transition hover:-translate-y-1 hover:border-[#7C3AED]">
-            <span className="inline-flex rounded-full bg-[#7C3AED]/10 px-3 py-1 text-xs uppercase tracking-[0.25em] text-[#7C3AED]">
-              Landing page
-            </span>
-            <h3 className="mt-5 text-xl font-semibold text-[#E5E7EB]">
-              Apresentação corporativa
-            </h3>
-            <p className="mt-3 text-sm leading-6 text-slate-400">
-              Experiência elegante e direta para captar leads qualificados.
-            </p>
-          </article>
-          <article className="rounded-[2rem] border border-slate-700/70 bg-[#111827]/90 p-6 transition hover:-translate-y-1 hover:border-[#7C3AED]">
-            <span className="inline-flex rounded-full bg-[#7C3AED]/10 px-3 py-1 text-xs uppercase tracking-[0.25em] text-[#7C3AED]">
-              Portfólio
-            </span>
-            <h3 className="mt-5 text-xl font-semibold text-[#E5E7EB]">
-              Identidade digital
-            </h3>
-            <p className="mt-3 text-sm leading-6 text-slate-400">
-              Sites institucionais com visual refinado e navegação intuitiva.
-            </p>
-          </article>
+
+        <div className="grid gap-8 md:grid-cols-3">
+          {[
+            {
+              title: "Etranças",
+              tag: "Fullstack",
+              desc: "API com NestJS e TypeORM com DTOs e arquitetura em camadas.",
+            },
+            {
+              title: "Maria Gasolina",
+              tag: "Web App",
+              desc: "Aplicação React com foco em organização e experiência.",
+            },
+            {
+              title: "UpBody",
+              tag: "Frontend",
+              desc: "Interface responsiva com componentização e usabilidade.",
+            },
+          ].map((proj, i) => (
+            <div
+              key={i}
+              className="group relative rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-lg transition hover:-translate-y-2 hover:border-[#7C3AED]"
+            >
+              <span className="text-xs text-[#7C3AED]">{proj.tag}</span>
+
+              <h3 className="mt-4 text-xl font-semibold text-white">
+                {proj.title}
+              </h3>
+
+              <p className="mt-3 text-sm text-slate-400 group-hover:text-slate-300">
+                {proj.desc}
+              </p>
+
+              {/* glow hover */}
+              <div className="absolute inset-0 rounded-2xl bg-[#7C3AED]/0 group-hover:bg-[#7C3AED]/5 transition" />
+            </div>
+          ))}
         </div>
       </section>
 
-      <section id="contact" className="container mx-auto px-6 pb-24">
-        <div className="rounded-[2rem] border border-slate-700/60 bg-[#111827]/90 p-10 text-center shadow-[0_35px_90px_-45px_rgba(15,23,42,0.8)]">
-          <p className="text-sm uppercase tracking-[0.35em] text-[#7C3AED]">
-            Vamos trabalhar juntos
+      <section id="contact" className="container mx-auto px-6 pb-32">
+        <div className="relative rounded-[2rem] border border-white/10 bg-gradient-to-br from-[#111827] to-[#020617] p-12 text-center overflow-hidden">
+          {/* glow */}
+          <div className="absolute inset-0 bg-[#7C3AED]/10 blur-3xl opacity-30" />
+
+          <p className="text-xs uppercase tracking-[0.4em] text-[#7C3AED]">
+            Contato
           </p>
-          <h2 className="mt-4 text-3xl font-semibold text-[#E5E7EB]">
-            Seu próximo projeto merece um site com personalidade.
+
+          <h2 className="mt-6 text-4xl font-semibold text-white">
+            Vamos construir algo juntos
           </h2>
-          <p className="mt-4 mx-auto max-w-2xl text-base leading-7 text-slate-300">
-            Estou pronto para ajudar sua marca a se destacar com um portfólio ou
-            site corporativo forte, rápido e elegante.
+
+          <p className="mt-4 text-slate-300 max-w-xl mx-auto">
+            Buscando oportunidade de estágio para aplicar desenvolvimento,
+            automação e análise de dados em problemas reais.
           </p>
+
           <a
             href="mailto:seu-email@exemplo.com"
-            className="mt-8 inline-flex rounded-full bg-[#1E3A8A] px-8 py-3 text-sm font-semibold text-white transition hover:bg-[#223f9f]"
+            className="mt-8 inline-flex items-center justify-center rounded-full bg-[#7C3AED] px-10 py-4 text-sm font-semibold text-white shadow-lg shadow-[#7C3AED]/30 hover:scale-105 transition"
           >
-            Enviar mensagem
+            Entrar em contato
           </a>
         </div>
       </section>
