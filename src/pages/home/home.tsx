@@ -1,4 +1,5 @@
-import React from "react";
+import ProjectCardCompact from "../../components/cards/projectCardCompact";
+import { projects } from "../../data/projects";
 
 function Home() {
   return (
@@ -173,41 +174,9 @@ function Home() {
           </h2>
         </div>
 
-        <div className="grid gap-8 md:grid-cols-3">
-          {[
-            {
-              title: "Etranças",
-              tag: "Fullstack",
-              desc: "API com NestJS e TypeORM com DTOs e arquitetura em camadas.",
-            },
-            {
-              title: "Maria Gasolina",
-              tag: "Web App",
-              desc: "Aplicação React com foco em organização e experiência.",
-            },
-            {
-              title: "UpBody",
-              tag: "Frontend",
-              desc: "Interface responsiva com componentização e usabilidade.",
-            },
-          ].map((proj, i) => (
-            <div
-              key={i}
-              className="group relative rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-lg transition hover:-translate-y-2 hover:border-[#7C3AED]"
-            >
-              <span className="text-xs text-[#7C3AED]">{proj.tag}</span>
-
-              <h3 className="mt-4 text-xl font-semibold text-white">
-                {proj.title}
-              </h3>
-
-              <p className="mt-3 text-sm text-slate-400 group-hover:text-slate-300">
-                {proj.desc}
-              </p>
-
-              {/* glow hover */}
-              <div className="absolute inset-0 rounded-2xl bg-[#7C3AED]/0 group-hover:bg-[#7C3AED]/5 transition" />
-            </div>
+        <div className="flex gap-6 overflow-x-auto pb-6 scrollbar-hide py-5">
+          {projects.map((project) => (
+            <ProjectCardCompact key={project.id} project={project} />
           ))}
         </div>
       </section>

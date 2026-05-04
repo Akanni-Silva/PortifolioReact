@@ -11,7 +11,7 @@ function Navbar() {
       <div className="container mx-auto flex items-center justify-between px-6 py-4">
         {/* Logo / Nome */}
         <a
-          href="#home"
+          href="/"
           className="text-xl font-semibold tracking-tight text-[#E5E7EB] transition hover:opacity-80"
         >
           <span className="bg-linear-to-r from-[#7C3AED] to-[#22D3EE] bg-clip-text text-transparent">
@@ -25,7 +25,7 @@ function Navbar() {
           {["Sobre", "Projetos", "Resultados", "Contato"].map((item) => (
             <a
               key={item}
-              href={`#${item.toLowerCase()}`}
+              href={`${item.toLowerCase()}`}
               className="relative text-slate-300 transition hover:text-white"
             >
               {item}
