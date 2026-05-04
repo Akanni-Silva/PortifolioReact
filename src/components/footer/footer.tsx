@@ -23,16 +23,16 @@ function Footer() {
 
           {/* Navigation */}
           <div className="flex gap-6 text-sm text-slate-400">
-            <a href="#about" className="transition hover:text-white">
+            <a href="sobre" className="transition hover:text-white">
               Sobre
             </a>
-            <a href="#projects" className="transition hover:text-white">
+            <a href="projetos" className="transition hover:text-white">
               Projetos
             </a>
-            <a href="#results" className="transition hover:text-white">
+            <a href="resultados" className="transition hover:text-white">
               Resultados
             </a>
-            <a href="#contact" className="transition hover:text-white">
+            <a href="contato" className="transition hover:text-white">
               Contato
             </a>
           </div>
