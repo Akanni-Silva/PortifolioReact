@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import ProjectCardCompact from "../../components/cards/projectCardCompact";
 import { projects } from "../../data/projects";
 
@@ -34,14 +35,14 @@ function Home() {
 
               <div className="mt-10 flex flex-col sm:flex-row gap-4">
                 <a
-                  href="#contact"
+                  href="contato"
                   className="inline-flex items-center justify-center rounded-full bg-[#7C3AED] px-8 py-3 text-sm font-semibold text-white shadow-lg shadow-[#7C3AED]/30 hover:scale-105 transition"
                 >
                   Falar comigo
                 </a>
 
                 <a
-                  href="#projects"
+                  href="projetos"
                   className="inline-flex items-center justify-center rounded-full border border-slate-600 bg-white/5 px-8 py-3 text-sm font-semibold text-[#E5E7EB] hover:border-[#7C3AED] hover:text-[#7C3AED] transition"
                 >
                   Ver projetos
@@ -164,7 +165,7 @@ function Home() {
         </div>
       </section>
 
-      <section id="projects" className="container mx-auto px-6 py-24">
+      <section id="projects" className="container mx-auto px-6 py-20 pt-5">
         <div className="text-center mb-16">
           <p className="text-xs uppercase tracking-[0.4em] text-[#7C3AED]">
             Projetos
@@ -182,9 +183,9 @@ function Home() {
       </section>
 
       <section id="contact" className="container mx-auto px-6 pb-32">
-        <div className="relative rounded-[2rem] border border-white/10 bg-gradient-to-br from-[#111827] to-[#020617] p-12 text-center overflow-hidden">
+        <div className="relative rounded-4xl border border-white/10 bg-linear-to-br from-[#111827] to-[#020617] p-12 text-center overflow-hidden">
           {/* glow */}
-          <div className="absolute inset-0 bg-[#7C3AED]/10 blur-3xl opacity-30" />
+          <div className="absolute inset-0 bg-[#7C3AED]/10 blur-3xl opacity-30 pointer-events-none" />
 
           <p className="text-xs uppercase tracking-[0.4em] text-[#7C3AED]">
             Contato
@@ -199,12 +200,12 @@ function Home() {
             automação e análise de dados em problemas reais.
           </p>
 
-          <a
-            href="mailto:seu-email@exemplo.com"
+          <Link
+            to="/contato"
             className="mt-8 inline-flex items-center justify-center rounded-full bg-[#7C3AED] px-10 py-4 text-sm font-semibold text-white shadow-lg shadow-[#7C3AED]/30 hover:scale-105 transition"
           >
             Entrar em contato
-          </a>
+          </Link>
         </div>
       </section>
     </main>

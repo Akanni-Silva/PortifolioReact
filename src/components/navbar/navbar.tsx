@@ -36,7 +36,7 @@ function Navbar() {
 
         {/* CTA */}
         <a
-          href="#contact"
+          href="contato"
           className="hidden rounded-xl bg-linear-to-r from-[#7C3AED] to-[#22D3EE] px-4 py-2 text-sm font-medium text-white shadow-lg shadow-purple-900/30 transition hover:scale-105 md:block"
         >
           Fale comigo
