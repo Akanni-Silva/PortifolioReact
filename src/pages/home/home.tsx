@@ -34,19 +34,19 @@ function Home() {
               </p>
 
               <div className="mt-10 flex flex-col sm:flex-row gap-4">
-                <a
-                  href="contato"
+                <Link
+                  to="/contato"
                   className="inline-flex items-center justify-center rounded-full bg-[#7C3AED] px-8 py-3 text-sm font-semibold text-white shadow-lg shadow-[#7C3AED]/30 hover:scale-105 transition"
                 >
                   Falar comigo
-                </a>
+                </Link>
 
-                <a
-                  href="projetos"
+                <Link
+                  to="/projetos"
                   className="inline-flex items-center justify-center rounded-full border border-slate-600 bg-white/5 px-8 py-3 text-sm font-semibold text-[#E5E7EB] hover:border-[#7C3AED] hover:text-[#7C3AED] transition"
                 >
                   Ver projetos
-                </a>
+                </Link>
               </div>
             </div>
 

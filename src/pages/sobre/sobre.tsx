@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Sobre() {
   return (
     <section className="min-h-screen bg-[#0F172A] px-6 py-20">
@@ -136,12 +138,12 @@ function Sobre() {
             Aberto a oportunidades de estágio e projetos em tecnologia.
           </p>
 
-          <a
-            href="contato"
+          <Link
+            to="/contato"
             className="mt-8 inline-flex rounded-full bg-[#7C3AED] px-8 py-3 text-white font-semibold hover:scale-105 transition"
           >
             Entrar em contato
-          </a>
+          </Link>
         </div>
       </div>
     </section>

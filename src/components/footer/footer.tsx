@@ -1,5 +1,6 @@
 import { Mail } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "@sanity/icons";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -23,18 +24,18 @@ function Footer() {
 
           {/* Navigation */}
           <div className="flex gap-6 text-sm text-slate-400">
-            <a href="sobre" className="transition hover:text-white">
+            <Link to="/sobre" className="transition hover:text-white">
               Sobre
-            </a>
-            <a href="projetos" className="transition hover:text-white">
+            </Link>
+            <Link to="/projetos" className="transition hover:text-white">
               Projetos
-            </a>
-            <a href="resultados" className="transition hover:text-white">
+            </Link>
+            <Link to="/resultados" className="transition hover:text-white">
               Resultados
-            </a>
-            <a href="contato" className="transition hover:text-white">
+            </Link>
+            <Link to="/contato" className="transition hover:text-white">
               Contato
-            </a>
+            </Link>
           </div>
 
           {/* Social */}
