@@ -1,6 +1,6 @@
 // components/cards/ProjectCardCompact.tsx
 
-import type { Project } from "../../data/projects";
+import type { Project } from "../../models/projectsModel";
 
 type Props = {
   project: Project;

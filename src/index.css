@@ -1,1 +1,22 @@
 @import "tailwindcss";
+
+@keyframes carousel {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(calc(-50% - 0.75rem));
+  }
+}
+
+.animate-carousel {
+  animation: carousel 28s linear infinite;
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-carousel {
+    animation: none;
+  }
+}

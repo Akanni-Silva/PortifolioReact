@@ -1,5 +1,3 @@
-import React from "react";
-
 function Sobre() {
   return (
     <section className="min-h-screen bg-[#0F172A] px-6 py-20">
