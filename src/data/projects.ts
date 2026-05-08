@@ -9,21 +9,29 @@ export const projects: Project[] = [
     context: "Projeto pessoal • Fullstack",
 
     impact:
-      "Sistema criado para resolver uma necessidade real de organização de dados, com foco em escalabilidade e segurança.",
+      "Sistema criado para resolver uma necessidade real de organização de dados, com foco em escalabilidade, segurança e uso prático.",
 
     description: {
-      card: "Aplicação fullstack com autenticação JWT, modelagem relacional e arquitetura escalável.",
+      card: "Aplicação fullstack com autenticação JWT, arquitetura escalável e integração completa frontend-backend.",
 
       summary:
-        "Projeto fullstack desenvolvido com foco em arquitetura backend, segurança e organização de dados em cenários reais.",
+        "Sistema fullstack desenvolvido com foco em arquitetura robusta, segurança e organização de dados em cenários reais.",
 
-      full: "O ApKoukan é uma aplicação fullstack desenvolvida com o objetivo de resolver um problema real de organização e gerenciamento de informações. O projeto foi concebido desde o início com foco em boas práticas de engenharia de software, priorizando escalabilidade, segurança e clareza arquitetural.\n\nNo backend, foi construída uma API REST utilizando NestJS e TypeORM, com separação clara de responsabilidades em camadas (controllers, services e repositories). A autenticação é realizada via JWT, com implementação de guards para proteção de rotas e controle de acesso. Também foram aplicados conceitos avançados de modelagem de dados, incluindo relacionamentos complexos como Many-to-Many, garantindo flexibilidade e consistência na estrutura das entidades.\n\nAlém disso, o projeto conta com documentação interativa utilizando Swagger, permitindo fácil visualização e teste dos endpoints, o que simula um ambiente profissional de desenvolvimento e integração entre equipes.\n\nNo frontend, a aplicação consome os dados da API e apresenta uma interface moderna e responsiva, construída com React e TypeScript, mantendo consistência com a arquitetura tipada do backend.\n\nO ApKoukan representa não apenas um projeto técnico, mas uma evolução prática na construção de sistemas completos, integrando backend, frontend e boas práticas de desenvolvimento, com foco em aplicações reais e sustentáveis.",
+      full: `O ApKoukan é uma aplicação fullstack desenvolvida com o objetivo de resolver um problema real de organização e gerenciamento de informações, com foco em escalabilidade e segurança.
+
+No backend, foi construída uma API REST utilizando NestJS e TypeORM, seguindo uma arquitetura em camadas (controllers, services e repositories). A aplicação conta com autenticação via JWT, proteção de rotas com guards e controle de acesso estruturado, garantindo segurança no fluxo de dados.
+
+A modelagem do banco foi cuidadosamente planejada, utilizando relacionamentos complexos como Many-to-Many, permitindo flexibilidade e consistência na estrutura das entidades. Além disso, a API foi documentada com Swagger, facilitando testes e integração.
+
+No frontend, foi desenvolvida uma interface com React e TypeScript, consumindo a API de forma tipada e organizada. A interface foi pensada para ser responsiva, clara e funcional, garantindo boa experiência de uso.
+
+O projeto representa a construção de um sistema completo, integrando backend, frontend e boas práticas de engenharia de software, simulando um ambiente real de desenvolvimento de produto digital.`,
     },
 
     stack: [
       "TypeScript",
-      "NestJS",
       "React",
+      "NestJS",
       "Node.js",
       "MySQL",
       "TypeORM",
@@ -36,10 +44,10 @@ export const projects: Project[] = [
       "Proteção de rotas",
       "Relacionamentos complexos",
       "Arquitetura em camadas",
-      "Documentação Swagger",
+      "Integração frontend-backend",
     ],
 
-    github: "<PRIVATE_URL>",
+    github: "https://github.com/Akanni-Silva/ApKoukan",
   },
 
   {
@@ -47,24 +55,33 @@ export const projects: Project[] = [
 
     title: "Maria Gasolina",
 
-    context: "Projeto acadêmico • Backend",
+    context: "Projeto acadêmico • Fullstack",
 
     impact:
-      "Plataforma voltada para mobilidade urbana, conectando usuários a soluções de carona compartilhada.",
+      "Plataforma voltada para mobilidade urbana, conectando usuários em um fluxo completo de uso com backend e interface integrada.",
 
     description: {
-      card: "API REST para sistema de caronas com CRUD completo e arquitetura organizada.",
+      card: "Aplicação fullstack para sistema de caronas com API REST e interface integrada.",
 
       summary:
-        "Backend estruturado para gerenciamento de usuários, corridas e categorias em um sistema de mobilidade.",
+        "Sistema completo para gerenciamento de corridas, usuários e categorias com integração frontend-backend.",
 
-      full: "O Maria Gasolina é um sistema backend desenvolvido com o objetivo de simular uma plataforma de caronas compartilhadas, conectando motoristas e passageiros em um ambiente digital estruturado.\n\nO projeto foi construído utilizando Node.js com NestJS, aplicando conceitos sólidos de arquitetura RESTful. Foram implementados endpoints completos de CRUD para gerenciamento de usuários, corridas e categorias, garantindo uma base consistente para evolução da aplicação.\n\nA persistência de dados foi realizada com MySQL e TypeORM, permitindo a criação de entidades bem definidas e relacionamentos estruturados entre os dados. Além disso, foram aplicadas validações de entrada para garantir integridade das informações e evitar inconsistências no sistema.\n\nOutro ponto relevante foi a documentação dos endpoints com Swagger, facilitando o entendimento da API e permitindo testes rápidos durante o desenvolvimento.\n\nO projeto também foi publicado em ambiente de deploy (Render), proporcionando experiência prática com disponibilização de aplicações backend em produção.\n\nEste projeto demonstra domínio na construção de APIs completas, organização de código e aplicação de boas práticas no desenvolvimento backend, além de evidenciar capacidade de estruturar soluções para problemas reais de mobilidade.",
+      full: `O Maria Gasolina é uma aplicação fullstack desenvolvida com o objetivo de simular uma plataforma de caronas compartilhadas, conectando motoristas e passageiros em um ambiente digital estruturado.
+
+No backend, foi construída uma API REST utilizando NestJS e TypeORM, com endpoints completos de CRUD para gerenciamento de usuários, corridas e categorias. A aplicação conta com validações de dados e organização em camadas, garantindo escalabilidade e manutenção.
+
+No frontend, foi desenvolvida uma interface com React e TypeScript, permitindo interação com a API de forma dinâmica. O usuário pode navegar entre funcionalidades, visualizar dados e interagir com o sistema de forma intuitiva.
+
+A aplicação também foi disponibilizada em ambiente de deploy, proporcionando experiência prática com publicação e consumo de APIs em produção.
+
+Este projeto demonstra capacidade de desenvolvimento fullstack, integração de sistemas e construção de soluções completas voltadas para problemas reais.`,
     },
 
     stack: [
+      "React",
+      "TypeScript",
       "NestJS",
       "Node.js",
-      "TypeScript",
       "MySQL",
       "TypeORM",
       "Swagger",
@@ -74,12 +91,12 @@ export const projects: Project[] = [
     highlights: [
       "CRUD completo",
       "API REST",
+      "Integração frontend-backend",
       "Validação de dados",
       "Deploy em produção",
-      "Documentação Swagger",
     ],
 
-    github: "<PRIVATE_URL>",
+    github: "https://github.com/Commit8/maria_gasolina",
   },
 
   {
@@ -90,15 +107,25 @@ export const projects: Project[] = [
     context: "Projeto colaborativo • Backend",
 
     impact:
-      "Sistema voltado para otimizar processos de gestão de pessoas dentro de organizações.",
+      "Sistema voltado para otimizar processos de gestão de pessoas, com foco em organização e eficiência operacional.",
 
     description: {
-      card: "Sistema de RH com API REST escalável e arquitetura limpa.",
+      card: "API REST para gestão de colaboradores com arquitetura limpa e escalável.",
 
       summary:
-        "Projeto backend focado em gestão de colaboradores com organização e boas práticas.",
+        "Backend estruturado para gerenciamento de colaboradores com boas práticas e organização de código.",
 
-      full: "O InovaRH é um sistema backend desenvolvido com foco na gestão de recursos humanos, com o objetivo de organizar informações de colaboradores e otimizar processos internos dentro de empresas.\n\nO projeto foi construído utilizando NestJS e TypeScript, seguindo princípios de arquitetura limpa e boas práticas de desenvolvimento. A estrutura do código foi organizada de forma modular, permitindo escalabilidade e fácil manutenção.\n\nForam implementados endpoints RESTful para gerenciamento de colaboradores, incluindo funcionalidades como criação, atualização, listagem e filtragem de dados com base em critérios como cargo e setor.\n\nA aplicação também utiliza TypeORM para mapeamento objeto-relacional, garantindo consistência na comunicação com o banco de dados e facilitando a manipulação das entidades.\n\nDurante o desenvolvimento, foram aplicados conceitos como injeção de dependência, separação de responsabilidades e validação de dados, reforçando a qualidade e robustez da aplicação.\n\nEste projeto evidencia a capacidade de trabalhar em equipe, seguir padrões de desenvolvimento e construir soluções organizadas para problemas corporativos reais, especialmente em contextos de gestão e operação.",
+      full: `O InovaRH é um sistema backend desenvolvido com foco na gestão de recursos humanos, com o objetivo de organizar informações de colaboradores e otimizar processos internos em empresas.
+
+A aplicação foi construída utilizando NestJS e TypeScript, seguindo princípios de arquitetura limpa, separação de responsabilidades e organização modular do código.
+
+Foram implementados endpoints RESTful para gerenciamento de colaboradores, incluindo criação, atualização, listagem e filtros por critérios como cargo e setor, permitindo maior controle sobre os dados.
+
+A persistência foi realizada com MySQL e TypeORM, garantindo consistência e facilidade na manipulação das entidades.
+
+Durante o desenvolvimento, foram aplicadas boas práticas como validação de dados, injeção de dependência e estruturação escalável da aplicação.
+
+Este projeto demonstra capacidade de desenvolvimento backend estruturado, organização de código e trabalho em equipe em um contexto colaborativo.`,
     },
 
     stack: ["NestJS", "Node.js", "TypeScript", "MySQL", "TypeORM"],
@@ -111,7 +138,7 @@ export const projects: Project[] = [
       "Código escalável",
     ],
 
-    github: "<PRIVATE_URL>",
+    github: "https://github.com/Commit8/inova_rh",
   },
 
   {
@@ -122,15 +149,25 @@ export const projects: Project[] = [
     context: "Projeto de estudo • Backend",
 
     impact:
-      "Projeto voltado ao aprofundamento em APIs REST robustas no ecossistema Java.",
+      "Projeto focado em aprofundar conhecimento em APIs robustas no ecossistema Java.",
 
     description: {
-      card: "API REST bancária em Java com Spring Boot, JPA e controle de migrations.",
+      card: "API bancária em Java com Spring Boot, JPA e controle de migrations.",
 
       summary:
-        "Sistema backend para gerenciamento de usuários bancários com foco em arquitetura robusta.",
+        "Sistema backend para gerenciamento bancário com arquitetura robusta e boas práticas.",
 
-      full: "Este projeto consiste no desenvolvimento de um sistema backend bancário utilizando Java com Spring Boot, com o objetivo de aprofundar conhecimentos em construção de APIs REST robustas e bem estruturadas.\n\nA aplicação implementa gerenciamento de usuários bancários, utilizando JPA para persistência de dados e MySQL como banco relacional. A estrutura do projeto segue padrões amplamente utilizados no ecossistema Java, garantindo organização e escalabilidade.\n\nUm dos destaques é o uso do Flyway para controle de migrations, permitindo versionamento do banco de dados e maior segurança na evolução da aplicação.\n\nAlém disso, foram implementados mecanismos de tratamento global de exceções, garantindo respostas padronizadas e melhor experiência para consumidores da API. Também foram utilizados logs com SLF4J para monitoramento e depuração.\n\nO projeto segue princípios de injeção de dependência e separação de responsabilidades, reforçando boas práticas no desenvolvimento backend.\n\nEssa aplicação demonstra versatilidade tecnológica, mostrando capacidade de atuar não apenas com Node.js, mas também com Java, além de evidenciar domínio em construção de APIs robustas, organizadas e prontas para ambientes reais.",
+      full: `Este projeto consiste no desenvolvimento de um sistema backend bancário utilizando Java com Spring Boot, com foco em aprofundar conhecimentos em construção de APIs robustas.
+
+A aplicação implementa gerenciamento de usuários bancários, utilizando JPA para persistência de dados e MySQL como banco relacional.
+
+Um dos principais destaques é o uso do Flyway para controle de migrations, permitindo versionamento do banco de dados e maior segurança na evolução da aplicação.
+
+Também foram implementados tratamento global de exceções e logs com SLF4J, garantindo padronização de respostas e melhor capacidade de monitoramento.
+
+O projeto segue princípios como injeção de dependência e separação de responsabilidades, reforçando boas práticas do ecossistema Java.
+
+Essa aplicação demonstra versatilidade tecnológica e capacidade de atuar com diferentes stacks backend.`,
     },
 
     stack: ["Java", "Spring Boot", "JPA", "MySQL", "Flyway", "Maven"],
@@ -143,8 +180,9 @@ export const projects: Project[] = [
       "Arquitetura REST",
     ],
 
-    github: "<PRIVATE_URL>",
+    github: "https://github.com/Akanni-Silva/api-banco.git",
   },
+
   {
     id: "upbody",
 
@@ -153,27 +191,37 @@ export const projects: Project[] = [
     context: "Projeto pessoal • Fullstack",
 
     impact:
-      "Aplicação voltada para acompanhamento físico e organização de treinos, incentivando consistência e controle de evolução.",
+      "Aplicação voltada para organização de treinos e acompanhamento de evolução física, incentivando consistência e controle.",
 
     description: {
-      card: "Aplicação para gestão de treinos e acompanhamento físico com foco em organização e consistência.",
+      card: "Aplicação fullstack para gestão de treinos e acompanhamento físico.",
 
       summary:
-        "Sistema desenvolvido para auxiliar no controle de treinos, evolução física e organização de rotinas de exercício.",
+        "Sistema completo para organização de treinos, evolução e rotina de exercícios.",
 
-      full: "O UpBody é uma aplicação desenvolvida com o objetivo de auxiliar no acompanhamento de treinos e evolução física, focando na organização e consistência de rotinas de exercício.\n\nA ideia do projeto surgiu da necessidade de estruturar melhor informações relacionadas a treinos, permitindo que o usuário registre atividades, acompanhe sua evolução e mantenha um histórico organizado.\n\nDo ponto de vista técnico, o projeto foi pensado como uma aplicação fullstack, com separação clara entre frontend e backend. O frontend foi desenvolvido com React e TypeScript, priorizando uma interface simples, intuitiva e responsiva, facilitando o uso contínuo da aplicação.\n\nNo backend, foi estruturada uma API responsável pelo gerenciamento dos dados de treino, usuários e registros, seguindo princípios de organização e escalabilidade. A aplicação trabalha com persistência de dados, permitindo manter histórico de evolução ao longo do tempo.\n\nAlém da implementação técnica, o projeto também teve como foco a modelagem de dados, definindo entidades como usuário, treino e registros de atividade, garantindo flexibilidade para expansão futura, como inclusão de métricas mais avançadas (peso, repetições, desempenho, etc.).\n\nO UpBody demonstra a capacidade de construir soluções voltadas ao usuário final, combinando organização de dados, usabilidade e arquitetura de software. Também evidencia preocupação com evolução contínua do sistema, permitindo adaptações e crescimento conforme novas necessidades surgem.",
+      full: `O UpBody é uma aplicação fullstack desenvolvida com o objetivo de auxiliar no acompanhamento de treinos e evolução física, promovendo organização e consistência nas rotinas de exercício.
+
+O projeto surgiu da necessidade de estruturar informações de treino, permitindo que usuários registrem atividades, acompanhem progresso e mantenham histórico de evolução.
+
+No frontend, foi desenvolvida uma interface com React e TypeScript, focada em simplicidade, usabilidade e responsividade, facilitando o uso contínuo da aplicação.
+
+No backend, foi estruturada uma API responsável pelo gerenciamento de usuários, treinos e registros, garantindo persistência de dados e organização das informações.
+
+A modelagem de dados foi pensada para permitir expansão futura, incluindo métricas como desempenho, carga e frequência de treinos.
+
+O UpBody demonstra a capacidade de construir sistemas voltados ao usuário final, integrando frontend, backend e organização de dados em uma solução prática e escalável.`,
     },
 
     stack: ["React", "TypeScript", "Node.js", "API REST"],
 
     highlights: [
       "Gestão de treinos",
-      "Organização de dados",
       "Histórico de evolução",
       "Interface responsiva",
-      "Modelagem de entidades",
+      "Integração frontend-backend",
+      "Modelagem de dados",
     ],
 
-    github: "<PRIVATE_URL>",
+    github: "https://github.com/Commit8/up_body.git",
   },
 ];

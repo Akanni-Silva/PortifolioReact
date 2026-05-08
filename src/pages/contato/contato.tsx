@@ -1,7 +1,32 @@
 import { GithubIcon, LinkedinIcon } from "@sanity/icons";
 import { Mail } from "lucide-react";
+import { useState } from "react";
 
 function Contato() {
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setForm({
+      ...form,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const subject = encodeURIComponent(`Contato de ${form.name} via portfólio`);
+
+    const body = encodeURIComponent(
+      `Nome: ${form.name}\nEmail: ${form.email}\n\nMensagem:\n${form.message}`,
+    );
+
+    window.location.href = `mailto:akanni029@gmail.com?subject=${subject}&body=${body}`;
+  };
   return (
     <section className="min-h-screen bg-[#0F172A] px-6 py-20">
       <div className="mx-auto max-w-4xl">
@@ -25,7 +50,8 @@ function Contato() {
         <div className="grid gap-6 md:grid-cols-3">
           {/* EMAIL */}
           <a
-            href="mailto:akanni029@gmail.com"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=akanni029@gmail.com"
+            target="_blank"
             className="group rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-lg transition hover:-translate-y-1 hover:border-[#7C3AED]"
           >
             <Mail className="text-[#7C3AED]" />
@@ -63,21 +89,56 @@ function Contato() {
         </div>
 
         {/* CTA FINAL */}
-        <div className="mt-16 rounded-2xl border border-white/10 bg-[#020617] p-8 text-center">
-          <h2 className="text-2xl font-semibold text-white">
+        <div className="mt-16 rounded-2xl border border-white/10 bg-[#020617] p-8">
+          <h2 className="text-2xl font-semibold text-white text-center">
             Interessado em trabalhar comigo?
           </h2>
 
-          <p className="mt-3 text-slate-400">
-            Me envie um email ou me chame no LinkedIn — respondo rápido 🚀
+          <p className="mt-3 text-slate-400 text-center">
+            Me mande uma mensagem diretamente por aqui 🚀
           </p>
 
-          <a
-            href="mailto:akanni029@gmail.com"
-            className="mt-6 inline-block rounded-xl bg-[#7C3AED] px-6 py-3 text-sm font-medium text-white transition hover:bg-[#6D28D9]"
+          <form
+            onSubmit={handleSubmit}
+            className="mt-8 space-y-4 max-w-xl mx-auto"
           >
-            Entrar em contato
-          </a>
+            <input
+              type="text"
+              name="name"
+              placeholder="Seu nome"
+              value={form.name}
+              onChange={handleChange}
+              required
+              className="w-full rounded-xl bg-slate-900 border border-white/10 px-4 py-3 text-white placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-[#7C3AED]"
+            />
+
+            <input
+              type="email"
+              name="email"
+              placeholder="Seu email"
+              value={form.email}
+              onChange={handleChange}
+              required
+              className="w-full rounded-xl bg-slate-900 border border-white/10 px-4 py-3 text-white placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-[#22D3EE]"
+            />
+
+            <textarea
+              name="message"
+              placeholder="Sua mensagem"
+              value={form.message}
+              onChange={handleChange}
+              required
+              rows={5}
+              className="w-full rounded-xl bg-slate-900 border border-white/10 px-4 py-3 text-white placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-[#7C3AED]"
+            />
+
+            <button
+              type="submit"
+              className="w-full rounded-xl bg-linear-to-r from-[#7C3AED] to-[#22D3EE] px-6 py-3 text-sm font-medium text-white shadow-lg shadow-purple-900/30 transition hover:scale-105"
+            >
+              Enviar mensagem
+            </button>
+          </form>
         </div>
       </div>
     </section>

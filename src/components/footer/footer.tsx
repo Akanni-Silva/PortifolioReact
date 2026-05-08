@@ -40,19 +40,22 @@ function Footer() {
           {/* Social */}
           <div className="flex gap-4">
             <a
-              href="#"
+              href="https://github.com/Akanni-Silva"
+              target="_blank"
               className="rounded-lg border border-white/10 p-2 text-slate-400 transition hover:border-[#7C3AED] hover:text-white"
             >
               <GithubIcon width={18} height={18} />
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/akannisilva/"
+              target="_blank"
               className="rounded-lg border border-white/10 p-2 text-slate-400 transition hover:border-[#22D3EE] hover:text-white"
             >
               <LinkedinIcon width={18} height={18} />
             </a>
             <a
-              href="#"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=akanni029@gmail.com"
+              target="_blank"
               className="rounded-lg border border-white/10 p-2 text-slate-400 transition hover:border-[#7C3AED] hover:text-white"
             >
               <Mail size={18} />
