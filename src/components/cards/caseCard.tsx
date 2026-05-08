@@ -1,4 +1,4 @@
-import type { Case } from "../../data/cases";
+import type { Case } from "../../models/caseModel";
 
 type Props = {
   data: Case;

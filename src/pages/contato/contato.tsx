@@ -1,6 +1,6 @@
 import { GithubIcon, LinkedinIcon } from "@sanity/icons";
 import { Mail } from "lucide-react";
-import { useState } from "react";
+import { type ChangeEvent, type FormEvent, useState } from "react";
 
 function Contato() {
   const [form, setForm] = useState({
@@ -9,14 +9,16 @@ function Contato() {
     message: "",
   });
 
-  const handleChange = (e) => {
+  const handleChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
     setForm({
       ...form,
       [e.target.name]: e.target.value,
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     const subject = encodeURIComponent(`Contato de ${form.name} via portfólio`);
